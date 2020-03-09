@@ -1,0 +1,61 @@
+<!-- /*
+  Author: Siobhan Chevy O'Dell
+  Last revision: 08/03/2020
+*/ -->
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Socket.IO chat</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" >
+
+  </head>
+  <body>
+    <div class="container-fluid justify-content-center">
+
+      <!-- //**********display********** -->
+      <div class="row justify-content-center">
+
+        <div class="col-9">
+          <ul class="d-flex flex-column-reverse overflow-auto" id="messages"></ul>
+        </div>
+
+        <div class="col">
+          <span id="currentUserTag"> Your name is: </span>
+          <span class="" id="currentUser"></span>
+          <ul class="d-flex flex-column overflow-auto" id="users"></ul>
+        </div>
+
+      </div>
+
+      <!-- //**********input********** -->
+      <div class="row justify-content-center">
+
+        <form action="">
+          <div class="form-row align-items-center">
+
+            <div class="col">
+              <input type="text" class="form-control mb-2" id="input" autocomplete="off" placeholder="Send a Message..."/>
+            </div>
+
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary mb-2">Send</button>
+            </div>
+
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/client.js"></script>
+  </body>
+</html>

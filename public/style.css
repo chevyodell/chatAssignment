@@ -1,0 +1,79 @@
+/*
+  Author: Siobhan Chevy O'Dell
+  Last revision: 08/03/2020
+*/
+
+/******* GENERAL FORMATTING *******/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font: 13px Helvetica, Arial;
+  height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #ccffff;
+}
+
+.container{
+  display: grid;
+  min-height: 100%;
+  padding: 10px;
+  grid-gap: 50px 50px;
+}
+
+form{
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+form input {
+  border: 0;
+  padding: 10px;
+  width: 90%;
+  margin-right: .5%;
+}
+
+ul{
+  max-height: 92vh;
+  overflow-y: scroll;
+}
+
+span{
+  margin-top: 10px;
+}
+
+#users{
+  list-style-type: none;
+  grid-column: 1/2;
+  background-color: white;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 5px;
+}
+
+#users li {
+  padding: 5px 10px;
+}
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  background-color: white;
+}
+
+#messages li {
+  padding: 5px 10px;
+}
+
+#messages li:nth-child(odd) {
+  background: #eee;
+}
